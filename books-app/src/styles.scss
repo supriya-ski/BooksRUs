@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: white;
+        border-bottom: 2px #000 solid;
+        z-index: 1000;
+
+        .header-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            h1 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex: 2;
+            }
+        
+            span {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex: 2;
+            }
+        }
+    
+       
+    }
+
+    .container {
+        position: relative;
+        margin-top: 80px;
+
+        .books-content {
+            padding: 16px;
+        
+            .book-item-flx-div{
+                justify-content: center;
+            }
+            .book-list-card{
+                border: 1px solid #000;
+                margin: 5px;;
+            }
+        }
+
+        .books-content > mat-card {
+            margin-bottom: 16px;
+        }
+
+        .book-item-container {
+            padding: 40px;
+
+            iframe {
+                width: 100%;
+                height: 500px;
+            }
+
+            .book-item-title {
+                display: flex;
+                flex: 2;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
